@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<title>Demo of slider</title>
+<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+<link rel="stylesheet" href="./css/slider-min.css" />
+<script type="text/javascript" src="slider-min.js" defer="defer"></script>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+	margin-left:20px;
+	padding-left:10px;
+}
+#bannerCenter > div{
+	margin:10px;
+}
+h1{
+	display:block;
+	width:820px;
+	text-align:center;
+	height:80px;
+	background-color:#efefef;
+	padding-top:30px;
+	margin:-10px;
+	margin-bottom:20px;
+}
+h2{
+	display:block;
+	margin-top:10px;
+	padding-bottom:5px;
+	border-bottom:thin dashed #ccc;
+}
+#bannerCenter{
+    background:#FFF;
+    width: 800px;
+    float:left;
+    padding:10px;
+}
+#pixelLeft{
+    background:#ccc;
+    width: calc(50% - 405px);
+    float:left;
+}
+#pixelRight{
+    background:#ccc;
+    width: calc(50% - 405px);
+    float:right;
+}
+
+#bannerCenter,#pixelLeft,#pixelRight{
+    height: 100%;
+}</style>
+</head>
+<body style="background-color:#ccc;padding:0;">
+
+<div class="wrap">
+    <div id="pixelLeft">&nbsp;</div>
+    <div id="bannerCenter">
+      <h1>A simple demo of the Image Slider</h1>
+      <h2>Description</h2>
+      <div>This image slider is as the name suggests a lightweight automatic slider for displaying images.</div>
+	  <div>It only contains 5 features</div>
+	  <ul>
+		  <li>Display individual or collections of images in a consistant format and rotate through them.</li>
+		  <li>Pause and restart the slider.</li>
+		  <li>Ability to magnify image to the screen size.</li>
+		  <li>Supports multiple sliders on the page.</li>
+		  <li>Minimal code required to generate a slider. (place images inside a holder &lt;div&gt; with the class <em>slider</em>)</li>
+      </ul>
+      <h2>Licence</h2>
+      <div>This project is licenced under the MIT Licence, <a href="https://github.com/christopherchestnut/Slider-Image-Gallery/blob/master/LICENSE">a copy of this licence can be found here</a>.</div>
+
+      <h2>Requirements</h2>
+      <div>jQuery v1.12.0 (may work on earlier versions, but has not been tested.)</div>
+      <h2>Demo</h2>
+      <div class="slider">
+       <img src="./images/lotus-978659_1280.jpg" alt="Lotus by jennyzhh2008" />
+       <img src="./images/chevrolet-637778_1280.jpg" alt="Chevrolet Impala 1972 by Bergadder" />
+       <img src="./images/minion-972908_1280.jpg" alt="Minion by Alexas_Fotos" />
+       <img src="./images/tea-1090672_1280.jpg" alt="Tea Hot by langll" />
+      </div>
+      <h2>Getting started</h2>
+      <div></div>
+    </div>
+    <div id="pixelRight">&nbsp;</div>
+</div>
+<div style="clear:both;"></div>
+</body>
+</html>

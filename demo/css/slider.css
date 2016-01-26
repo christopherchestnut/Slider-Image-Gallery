@@ -1,0 +1,121 @@
+/* Licensed under the MIT/X11 License (http://opensource.org/licenses/MIT) */
+.slider{
+	position:relative;
+	height:400px;
+	border:thin solid #CCC;
+	padding:10px;
+	overflow:hidden;
+	background-image:url('./images/wpspin-2x.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.slider > img{
+	display:none;
+}
+.slider .slide{
+	position:absolute;
+	top:10px;
+	left:10px;
+	background-color:white;
+	z-index:1;
+	width:530px;
+	cursor:pointer;
+}
+.slider .slide img{
+	max-height:400px;
+	max-width:530px;
+	display:none;
+	margin:auto;
+}
+.slider .slide div{
+	display:none;
+	position:absolute;
+	bottom:0px;
+	width:530px;
+	text-align:center;
+	background:#000;
+	height:20px;
+	color:#FFF;
+	padding-top:10px;
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+.slider .slide{
+	display:none;
+}
+.slider .currentslide{
+	display:block;
+}
+.slider .currentslide .description{
+	display:block;
+}
+.slider .currentslide img{
+	z-index:2;
+	display:block;
+}
+.slider .pauseHolder,.slider .playHolder{
+	background-image:url('./images/fadedoutpause.png');   
+    	background-position:center;
+    	background-repeat:no-repeat;
+    	width:50px;
+    	height:50px;
+    	z-index:3;
+    	position:absolute;
+    	top: 175px;
+    	left: 240px;
+}
+.slider .playHolder{
+	background-image:url('./images/fadedoutplay.png');   
+}
+.slider .zoomHolder{
+	background-image:url('./images/fadedoutzoomin.png');   
+    	background-position:center;
+    	background-repeat:no-repeat;
+    	width:25px;
+    	height:25px;
+    	z-index:3;
+    	position:absolute;
+    	top: 10px;
+    	right: 10px;    	
+	cursor:pointer;
+}
+.lightboxsheet{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-image:url('./images/lightboxoverlay.png');
+	/*background-color:black;*/
+	background-position:center;
+    	background-repeat:repeat;
+	z-index:10;	
+	text-align:center;
+	padding-top:3%;	
+	cursor:pointer;
+}
+.lightboxsheet img{
+	border-top: thick solid #333;
+	border-left: thick solid #333;
+	border-bottom: medium solid #333;
+	border-right: medium solid #333;
+	padding: 5px;
+	background-color: white;
+	position:relative;
+}
+#socialslider{
+	display:none;
+}
+/** Not used by slide, just extra styling for the page **/
+.pin-it-btn-wrapper table{
+	width:auto;
+	border:none;
+	margin:0;
+	padding:0;
+	float:right;
+	border-spacing:0;
+}
+.pin-it-btn-wrapper img{
+	border:none;
+	padding:0;
+}
