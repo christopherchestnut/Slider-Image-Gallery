@@ -1,7 +1,7 @@
 # Slider-Image-Gallery
 a simple image slideshow using jquery to cycle through a series of images
 
-It only contains 3 features
+It only contains 5 features
 
 * Display individual or collections of images in a consistant format and rotate through them.
 * Pause and restart the slider.
